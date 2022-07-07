@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+
+            <div class="name fm">
+                <label>NAME</label>
+                <input type="text" placeholder="name" required>
+            </div>
+            <div class="email fm">
+                <label>email</label>
+                <input type="email" placeholder="enter your email" required>
+            </div>
+            <div class="phone fm">
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    placeholder="telephone number">
+            </div>
+            <div class="gender fm">
+                <p>gender</p>
+                <input type="radio" id="female" value="female">
+                <label for="female">FEMALE</label>
+                <input type="radio" id="MALE" value="MALE">
+                <label for="MALE">MALE</label>
+                <input type="radio" id="OTHERS" value="OTHERS">
+                <label for="OTHERS">OTHERS</label>
+            </div>
+            <div class="address fm">
+                <p>enter your address</p>
+                <textarea name="" id="" cols="30" rows="2" placeholder="enter your address"></textarea>
+            </div>
+            <div class="pincode fm">
+                <p>pincode</p>
+                <input type="text" name="pin" pattern="[0-9]{6}" maxlength="6" placeholder="pincode">
+            </div>
+            <div class="password fm">
+                <label>password</label>
+                <input type="password" placeholder="enter password">
+            </div>
+            <div class="confirm-password fm">
+                <label>confirm password</label>
+                <input type="password" placeholder="re-enter passsword">
+            </div>
+            <div class="agree fm">
+                <input type="checkbox" name="" id="">
+                <p>i agree to all tems and conditions</p>
+                <button type="submit" form="form1" value="Submit">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
